@@ -9,6 +9,8 @@ const btnHold = document.querySelector('.btn--hold');
 const current0ElScore = document.getElementById('current--0');
 const current1ElScore = document.getElementById('current--1');
 
+const scores = [0, 0];
+let activePlayer = 0;
 score0El.textContent = 0;
 score1El.textContent = 0;
 diceEl.classList.add('hidden');
@@ -20,7 +22,7 @@ btnRoll.addEventListener('click', function () {
   diceEl.src = `dice-${dice}.png`;
   if (dice !== 1) {
     currentScore += dice;
-    current0ElScore.textContent = currentScore;
   } else {
+    activePlayer = activePlayer === 0 ? 1 : 0;
   }
 });
