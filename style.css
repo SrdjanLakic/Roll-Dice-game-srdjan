@@ -174,9 +174,12 @@ main {
 .winner--0 {
   font-size: xx-large;
   color: #c7365f;
+  margin: 30px;
+  padding-top: 20px;
 }
 .winner--1 {
   font-size: xx-large;
   color: #c7365f;
-  text-transform: uppercase;
+  margin: 30px;
+  padding-top: 20px;
 }
