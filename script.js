@@ -1,4 +1,5 @@
 'use strict';
+
 const player0El = document.querySelector('.player--0');
 const player1El = document.querySelector('.player--1');
 const score0El = document.getElementById('score--0');
@@ -11,6 +12,8 @@ const current0ElScore = document.getElementById('current--0');
 const current1ElScore = document.getElementById('current--1');
 const winner0El = document.querySelector('.winner--0');
 const winner1El = document.querySelector('.winner--1');
+let player1 = document.getElementById('name--0');
+let player2 = document.getElementById('name--1');
 
 let playing, scores, activePlayer, currentScore;
 
@@ -32,6 +35,17 @@ const init = function () {
   winner1El.classList.add('hidden');
 };
 init();
+
+// player1 = prompt('Enter player1 name');
+// if (!player1 && player1 !== String) {
+//   alert('Wrong input,please enter player 1 name again');
+// } else {
+//   player1 =
+// }
+// player1El = prompt('Enter player2 name'){
+
+// }
+
 const switchPlayer = function () {
   document.getElementById(`current--${activePlayer}`).textContent = 0;
   currentScore = 0;
@@ -77,3 +91,5 @@ btnHold.addEventListener('click', function () {
     }
   }
 });
+
+btnNew.addEventListener('click', init);

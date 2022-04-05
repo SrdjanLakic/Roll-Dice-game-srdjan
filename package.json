@@ -1,7 +1,7 @@
 {
-  "name": "guess-my-number",
+  "name": "roll-dice-game",
   "version": "1.0.0",
-  "description": "Guess number game",
+  "description": "Roll dice game",
   "default": "index.html",
   "scripts": {
     "start": "parcel index.html",
